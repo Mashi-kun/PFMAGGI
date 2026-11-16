@@ -1,0 +1,248 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080d16;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #050a12;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #168bff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #168bff;
+}
+
+/* PORTADA */
+
+.portada {
+    height: 400px;
+    background: linear-gradient(120deg, #071629, #0757a2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portada h2 {
+    font-size: 65px;
+    color: #168bff;
+}
+
+.portada p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* PRESENTACIÓN */
+
+.presentacion {
+    padding: 60px;
+    text-align: center;
+}
+
+.presentacion h2 {
+    color: #168bff;
+    margin-bottom: 20px;
+}
+
+.presentacion p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.7;
+}
+
+/* ESTADÍSTICAS */
+
+.estadisticas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.caja {
+    background-color: #101a2a;
+    padding: 30px;
+    width: 220px;
+    text-align: center;
+    border-bottom: 4px solid #168bff;
+}
+
+.caja h3 {
+    color: #168bff;
+    font-size: 35px;
+}
+
+/* CONTENEDORES */
+
+.contenedor {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.contenedor>h2 {
+    color: #168bff;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* HISTORIA */
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.historia article {
+    background-color: #101a2a;
+    padding: 25px;
+    border-left: 4px solid #168bff;
+}
+
+.historia h3 {
+    color: #168bff;
+    margin-bottom: 10px;
+}
+
+/* PILOTOS */
+
+.pilotos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.piloto {
+    background-color: #101a2a;
+    padding: 30px;
+    flex: 1 1 300px;
+    border-top: 4px solid #168bff;
+}
+
+.piloto h3 {
+    color: #168bff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.piloto p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* TABLA */
+
+.tabla {
+    overflow-x: auto;
+    margin-bottom: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #101a2a;
+}
+
+th,
+td {
+    padding: 18px;
+    text-align: center;
+    border: 1px solid #26374d;
+}
+
+th {
+    background-color: #0757a2;
+}
+
+/* TECNOLOGÍAS */
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tecnologias article {
+    background-color: #101a2a;
+    padding: 25px;
+    flex: 1 1 250px;
+    border-left: 4px solid #168bff;
+}
+
+.tecnologias h3 {
+    color: #168bff;
+    margin-bottom: 15px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #050a12;
+    padding: 25px;
+    text-align: center;
+    color: #a8b3c2;
+    margin-top: 50px;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .portada h2 {
+        font-size: 40px;
+    }
+
+    .presentacion {
+        padding: 30px;
+    }
+
+    .contenedor {
+        width: 92%;
+    }
+
+}
